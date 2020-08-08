@@ -1,0 +1,9 @@
+from petclinic.models import Owner
+
+Owner.objects.filter(id=1).update(first_name='Aung')
+
+or
+
+owner_obj = Owner.objects.get(id=1)
+owner_obj.first_name = 'Aung'
+owner_obj.save()

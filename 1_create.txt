@@ -1,0 +1,9 @@
+from petclinic.models import Owner
+
+owner = Owner.objects.create(first_name='Kyaw' , last_name='Kyaw')
+
+OR
+
+owner = Owner(first_name='Aung' , last_name='Hla')
+
+owner.save(force_insert=True)

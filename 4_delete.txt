@@ -1,0 +1,8 @@
+from petclinic.models import PetType
+
+Owner.objects.filter(first_name='Aung').delete()
+
+OR
+
+owners = Owner.objects.all()
+owners.delete()

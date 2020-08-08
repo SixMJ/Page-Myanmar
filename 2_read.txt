@@ -1,0 +1,15 @@
+from petclinic.models import Owner
+
+GET
+
+owner = Owner.objects.get(id=1)
+owner.first_name
+
+FILTER
+
+owner = Owner.object.filter(first_name='Kyaw')
+owner[1]
+
+ALL
+
+Owner.objects.all()
